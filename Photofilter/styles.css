@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Banty-Bold';
+    src: url("./assets/fonts/Banty-Bold.ttf");
+}
+@font-face {
+    font-family: 'VarelaRound-Regular';
+    src: url("./assets/fonts/VarelaRound-Regular.ttf");
+}
+
+
+html {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    font-family: Banty-Bold, sans-serif;
+    background-image: url("./assets/img/background.jpg");
+}
+
+header {
+    font-family: VarelaRound-Regular, sans-serif;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+main {
+    display: flex;
+    justify-content: center
+}
+
+.main-img {
+    width: 53.7vh;
+}
+
+.presets-img {
+    width: 10vh;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    margin-right: 150px;
+}
+
+.control-item {
+    display: flex;
+    width: 400px;
+    justify-content: flex-end;
+    padding: .5em;
+}
+
+.control-item label {
+    padding: .5em 1em .5em 0;
+    flex: 1;
+}
+.control-item input {
+    flex: 1;
+}

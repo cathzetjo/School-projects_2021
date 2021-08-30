@@ -2,9 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Photo-filter</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-in progress...
+<header><h1>Photo-filter</h1></header>
+<main>
+    <div class="controls">
+        <div class="control-item">
+            <label for="spacing">Spacing:</label>
+            <input type="range" id="spacing" name="spacing" min="10" max="200" value="10" data-sizing="px">
+        </div>
+        <div class="control-item">
+            <label for="blur">Blur:</label>
+            <input type="range" id="blur" name="blur" min="10" max="200" value="10" data-sizing="px">
+        </div>
+        <div class="control-item">
+            <label for="base">Color:</label>
+            <input type="color" id="base" name="base" value="#92c6ee">
+        </div>
+    </div>
+    <div class="img">
+        <img class="main-img" src="./assets/img/cat.jpg" alt="cat">
+        <div class="presets">
+            <img class='presets-img' src="./assets/img/cat.jpg" alt="cat">
+            <img class='presets-img' src="./assets/img/cat.jpg" alt="cat">
+            <img class='presets-img' src="./assets/img/cat.jpg" alt="cat">
+            <img class='presets-img' src="./assets/img/cat.jpg" alt="cat">
+            <img class='presets-img' src="./assets/img/cat.jpg" alt="cat">
+        </div>
+    </div>
+</main>
+<script src="index.js"></script>
 </body>
 </html>
