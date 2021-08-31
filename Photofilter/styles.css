@@ -46,7 +46,7 @@ main {
 }
 
 #main-img-parameters {
-    width: 53.7vh;
+    width: 53vh;
     border-radius: 10px;
 }
 
@@ -68,6 +68,7 @@ main {
 
 .control-item {
     display: flex;
+    height: 9vh;
     align-items: center;
 }
 
