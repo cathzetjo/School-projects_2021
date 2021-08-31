@@ -45,9 +45,12 @@ main {
     flex-wrap: wrap;
 }
 
-.main-img {
+#main-img-parameters {
     width: 53.7vh;
     border-radius: 10px;
+}
+
+.main-img {
     padding: var(--frame);
     background: var(--base);
     filter: blur(var(--blur)) brightness(var(--brightness)) contrast(var(--contrast)) sepia(var(--sepia)) hue-rotate(var(--hue-rotate)) invert(var(--invert)) saturate(var(--saturate));
@@ -157,4 +160,28 @@ button:hover:before {
 .presets img {
     border-radius: 10px;
 }
+
+.presets-img {
+    filter: blur(5px) brightness(0.4) contrast(200%) sepia(60%) hue-rotate(90deg) invert(75%)  saturate(30%);
+}
+.first-presets-img {
+    filter: brightness(1.2) contrast(80%) saturate(230%);
+}
+
+.second-presets-img {
+    filter: blur(2px);
+}
+
+.third-presets-img {
+    filter: hue-rotate(280deg);
+}
+
+.forth-presets-img {
+    filter: invert(100%);
+}
+
+.fifth-presets-img {
+    filter: sepia(60%)
+}
+
 

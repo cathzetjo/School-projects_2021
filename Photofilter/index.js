@@ -1,4 +1,6 @@
 const inputs = document.querySelectorAll('input');
+const mainImg = document.querySelector('.main-img');
+
 const frame = document.querySelector('#frame');
 const blur = document.querySelector('#blur');
 const brightness = document.querySelector('#brightness');
@@ -7,8 +9,6 @@ const sepia = document.querySelector('#sepia');
 const colorFilter = document.querySelector('#hue-rotate');
 const invert = document.querySelector('#invert');
 const saturate = document.querySelector('#saturate');
-
-
 
 const blurParagraph =  document.querySelector('.blur-paragraph');
 const frameParagraph =  document.querySelector('.frame-paragraph');
@@ -38,5 +38,8 @@ inputs.forEach(item => item.addEventListener('mousemove', handleUpdate));
 
 function reset () {
     location.reload();
-
 }
+
+function presetsApplying (presetNumber) {
+    mainImg.className=`${presetNumber}`;
+};
