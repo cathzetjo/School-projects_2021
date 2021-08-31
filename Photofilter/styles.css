@@ -184,4 +184,9 @@ button:hover:before {
     filter: sepia(60%)
 }
 
+.presets img:hover {
+    cursor: pointer;
+    box-shadow: rgba(196, 147, 75, 0.65) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
 
