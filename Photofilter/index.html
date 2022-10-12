@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Photo-filter</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<header><h1>Photo-filter</h1></header>
+<main>
+    <div class="controls">
+        <div class="control-item">
+            <label for="frame">Frame:</label>
+            <input type="range" id="frame" name="frame" min="0" max="10" value="0" data-sizing="px">
+            <p class="frame-paragraph">0</p>
+        </div>
+        <div class="control-item">
+            <label for="base">Color:</label>
+            <input type="color" id="base" name="base" value="#2B2B2B">
+            <p></p>
+        </div>
+        <div class="control-item">
+            <label for="blur">Blur:</label>
+            <input type="range" id="blur" name="blur" min="0" max="5" value="0" data-sizing="px">
+            <p class="blur-paragraph">0</p>
+        </div>
+        <div class="control-item">
+            <label for="brightness">Brightness:</label>
+            <input type="range" id="brightness" name="brightness" min="0.2" max="2" step="0.1" value="1">
+            <p class="brightness-paragraph">1</p>
+        </div>
+        <div class="control-item">
+            <label for="contrast">Contrast:</label>
+            <input type="range" id="contrast" name="contrast" min="20" max="200" step="10" value="100" data-sizing="%">
+            <p class="contrast-paragraph">100</p>
+        </div>
+        <div class="control-item">
+            <label for="sepia">Sepia:</label>
+            <input type="range" id="sepia" name="sepia" min="0" max="100" step="10" value="0" data-sizing="%">
+            <p class="sepia-paragraph">0</p>
+        </div>
+        <div class="control-item">
+            <label for="hue-rotate">Tone:</label>
+            <input type="range" id="hue-rotate" name="hue-rotate" min="0" max="340" step="20" value="0" data-sizing="deg">
+            <p class="hue-rotate-paragraph">0</p>
+        </div>
+        <div class="control-item">
+            <label for="invert">Invert:</label>
+            <input type="range" id="invert" name="invert" min="0" max="100" step="100" value="0" data-sizing="%">
+            <p class="invert-paragraph">0</p>
+        </div>
+        <div class="control-item">
+            <label for="saturate">Saturate:</label>
+            <input type="range" id="saturate" name="saturate" min="0" max="400" step="10" value="100" data-sizing="%">
+            <p class="saturate-paragraph">100</p>
+        </div>
+        <button class="reset" onclick="reset()">Reset</button>
+
+    </div>
+    <div class="img">
+        <img class="main-img" id="main-img-parameters" src="./assets/img/cat.jpg" alt="cat">
+        <div class="presets">
+            <img class='first-presets-img' src="./assets/img/cat.jpg" alt="cat" onclick="presetsApplying('first-presets-img')">
+            <img class='second-presets-img' src="./assets/img/cat.jpg" alt="cat" onclick="presetsApplying('second-presets-img')">
+            <img class='third-presets-img' src="./assets/img/cat.jpg" alt="cat" onclick="presetsApplying('third-presets-img')">
+            <img class='forth-presets-img' src="./assets/img/cat.jpg" alt="cat" onclick="presetsApplying('forth-presets-img')">
+            <img class='fifth-presets-img' src="./assets/img/cat.jpg" alt="cat" onclick="presetsApplying('fifth-presets-img')">
+        </div>
+    </div>
+</main>
+<script src="index.js"></script>
+</body>
+</html>
